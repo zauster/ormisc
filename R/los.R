@@ -1,3 +1,10 @@
+#' List loaded objects
+#'
+#' List all objects in enviroment, but prettily
+#' @param ... arguments passed onto lower level functions, no idea
+#' what exactly
+#' @param n the first 'n' objects are displayed
+#' @export
 los <- function(..., n = 10)
 {
     .ls.objects(..., order.by = "Size", decreasing = TRUE, head = TRUE, n = n)

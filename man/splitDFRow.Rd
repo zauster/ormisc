@@ -19,8 +19,7 @@ From a character field with comma-separated codes, split the row in
 several rows, one for each code in the character field
 }
 \examples{
-dta <- data.frame(a = 1:2, b = c("a, b, c", "d, e"),
-stringsAsFactors = FALSE)
+dta <- data.frame(a = 1:2, b = c("a, b, c", "d, e"), stringsAsFactors = FALSE)
 splitDFRow(dta, ", ", "b")
 }
 

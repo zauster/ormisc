@@ -1,4 +1,12 @@
-
+#' Sequential summing
+#'
+#' Given a vector or a matrix, sum every 'n' element up
+#' @param mat a vector or one-dimensional matrix
+#' @param n number of elements that are summed up
+#' @export
+#' @examples
+#' (x <- rnorm(15))
+#' seqsum(x, 3)
 seqsum <- function(mat, n = 3)
     {
         if(is.matrix(mat))
