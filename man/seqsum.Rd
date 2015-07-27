@@ -15,7 +15,7 @@ seqsum(mat, n = 3)
 Given a vector or a matrix, sum every 'n' element up
 }
 \examples{
-x <- rnorm(15)
+(x <- rnorm(15))
 seqsum(x, 3)
 }
 
