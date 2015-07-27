@@ -44,7 +44,7 @@ fac2char <- function(factor)
         as.character(levels(factor))[factor]
     }
 
-#' Conert a factor to a number
+#' Convert a factor to a number
 #'
 #' Given a factor vector, create a numeric vector from it
 #' @param factor the factor vector
@@ -53,3 +53,10 @@ fac2num <- function(factor)
     {
         as.numeric(levels(factor))[factor]
     }
+
+#' Sort unique vector
+#'
+#' Given a vector, get the sorted unique values
+#' @param x the vector
+#' @export
+sun <- function(x) sort(unique(x))

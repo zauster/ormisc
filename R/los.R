@@ -21,10 +21,11 @@ los <- function(..., n = 10)
     obj.type <- ifelse(is.na(obj.class), obj.mode, obj.class)
     ## obj.prettysize <- napply(names, function(x) {
     ##     capture.output(format(utils::object.size(x), units = "auto")) })
+    obj.size <- napply(names, utils::object.size)
+    ## obj.prettysize <- format(obj.size, units = "auto")
     obj.prettysize <- napply(names, function(x) {
         format(utils::object.size(x), units = "auto")
     })
-    obj.size <- napply(names, object.size)
     obj.dim <- t(napply(names, function(x)
                         as.numeric(dim(x))[1:2]))
     vec <- is.na(obj.dim)[, 1] & (obj.type != "function")
