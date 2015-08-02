@@ -60,3 +60,13 @@ fac2num <- function(factor)
 #' @param x the vector
 #' @export
 sun <- function(x) sort(unique(x))
+
+
+#' Difference in sets
+#'
+#' Given two vectors, get the element of the first vector that are NOT
+#' in the second vector
+#' @param x first vector
+#' @param y second vector
+#' @export
+"%nin%" <- function(x, y) !(x %in% y)
