@@ -1,7 +1,7 @@
 #' To view a data.frame / data.table in LibreOffice Calc
 #'
 #' Take a data.frame, save it to a temporary file and open it with the
-                                        #spreadsheet viewer of the OS.
+#' spreadsheet viewer of the OS.
 #' Requires the package 'openxlsx' to work properly.
 #' @param data the data.frame (or data.table)
 #' @export
