@@ -3,6 +3,7 @@
 #' This function was copied from the link in the references.
 #' I only changed the return type.
 #' @seealso http://stackoverflow.com/questions/32538052/update-all-packages-from-github
+#' @export
 update_github_pkgs <- function() {
 
   # check/load necessary packages
