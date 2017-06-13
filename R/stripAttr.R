@@ -7,7 +7,7 @@
 #' @export
 stripAttr <- function(col) {
   attr <- names(attributes(col))
-  keepAttr <- c("names", "row.names", "class")
+  keepAttr <- c("names", "row.names", "class", ".internal.selfref")
   for(j in attr[!attr %in% keepAttr]) {
       attr(col, j) <- NULL
   }
