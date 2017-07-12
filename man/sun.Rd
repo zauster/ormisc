@@ -12,4 +12,3 @@ sun(x)
 \description{
 Given a vector, get the sorted unique values
 }
-

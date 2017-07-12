@@ -18,4 +18,3 @@ a new data.frame will be returned}
 \description{
 Add a growth rate column for a given column in a data.frame
 }
-

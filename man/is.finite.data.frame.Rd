@@ -12,4 +12,3 @@
 \description{
 Test if a data.frame only contains finite values
 }
-

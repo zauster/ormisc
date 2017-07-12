@@ -14,4 +14,3 @@ getInd(x, position)
 \description{
 Given a vector, return a vector with all zeros except at 'position'
 }
-

@@ -18,4 +18,3 @@ ddplysum(data, variables, tosum, naswitch = FALSE)
 \description{
 Take a data.frame, separate it by the variables given and calculate
 }
-

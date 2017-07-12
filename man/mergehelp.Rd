@@ -19,4 +19,3 @@ mergehelp(x, y, by.x, by.y = by.x)
 Given two datasets, show what factor levels coincide, and which can
 only be found in one of the two datasets
 }
-

@@ -22,4 +22,3 @@ several rows, one for each code in the character field
 dta <- data.frame(a = 1:2, b = c("a, b, c", "d, e"), stringsAsFactors = FALSE)
 splitDFRow(dta, ", ", "b")
 }
-

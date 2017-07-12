@@ -2,7 +2,7 @@
 % Please edit documentation in R/stripAttr.R
 \name{stripAttr}
 \alias{stripAttr}
-\title{Remove attributes from a column of a data.frame/data.table}
+\title{Remove all attributes from a column of a data.frame/data.table}
 \usage{
 stripAttr(col)
 }
@@ -16,4 +16,3 @@ names, row.names, and class
 \description{
 Removes attributes of a column as they are often unnecessary. Found on stackoverflow.
 }
-
