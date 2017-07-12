@@ -81,4 +81,5 @@ sun <- function(x) sort(unique(x))
 #'
 #' Remove all objects from the environment
 #' @export
-rmall <- function() rm(list = ls())
+rmall <- function() rm(list = ls(envir = .GlobalEnv),
+                       envir = .GlobalEnv)
