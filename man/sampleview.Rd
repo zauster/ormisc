@@ -15,4 +15,3 @@ sampleview(df, n = 6)
 Given a data.frame, display a random selection of it. To see more
 than just the head or tail of the data
 }
-

@@ -15,4 +15,3 @@ x \%nin\% y
 Given two vectors, get the element of the first vector that are NOT
 in the second vector
 }
-

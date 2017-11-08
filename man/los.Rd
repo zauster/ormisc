@@ -15,4 +15,3 @@ what exactly}
 \description{
 List all objects in enviroment, but prettily
 }
-

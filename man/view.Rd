@@ -14,4 +14,3 @@ Take a data.frame, save it to a temporary file and open it with the
 spreadsheet viewer of the OS.
 Requires the package 'openxlsx' to work properly.
 }
-

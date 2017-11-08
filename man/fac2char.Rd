@@ -12,4 +12,3 @@ fac2char(factor)
 \description{
 Given a factor vector, create a character vector from it
 }
-

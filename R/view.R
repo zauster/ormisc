@@ -4,6 +4,7 @@
 #' spreadsheet viewer of the OS.
 #' Requires the package 'openxlsx' to work properly.
 #' @param data the data.frame (or data.table)
+#' @importFrom openxlsx write.xlsx
 #' @export
 view <- function(data) {
     open_command <- switch(Sys.info()[['sysname']],
@@ -11,7 +12,6 @@ view <- function(data) {
                            Linux  = 'xdg-open',
                            Darwin = 'open')
 
-    require(openxlsx)
     temp_file <- paste0(tempfile(), '.xlsx')
 
     data <- as.data.frame(data)

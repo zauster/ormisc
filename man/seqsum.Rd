@@ -18,4 +18,3 @@ Given a vector or a matrix, sum every 'n' element up
 (x <- rnorm(15))
 seqsum(x, 3)
 }
-

@@ -1,14 +1,3 @@
-#' Finite data.frame
-#'
-#' Test if a data.frame only contains finite values
-#' @param df the data.frame
-#' @export
-is.finite.data.frame <- function(df)
-    {
-        sapply(df, is.finite)
-    }
-
-
 #' Extract a position in a vector
 #'
 #' Given a vector, return a vector with all zeros except at 'position'

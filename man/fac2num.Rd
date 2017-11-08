@@ -12,4 +12,3 @@ fac2num(factor)
 \description{
 Given a factor vector, create a numeric vector from it
 }
-

@@ -13,4 +13,3 @@ I only changed the return type.
 \seealso{
 http://stackoverflow.com/questions/32538052/update-all-packages-from-github
 }
-
