@@ -64,3 +64,11 @@ sun <- function(x) sort(unique(x))
 #' @param y second vector
 #' @export
 "%nin%" <- function(x, y) !(x %in% y)
+
+
+#' Remove all
+#'
+#' Remove all objects from the environment
+#' @export
+rmall <- function() rm(list = ls(envir = .GlobalEnv),
+                       envir = .GlobalEnv)
