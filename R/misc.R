@@ -1,17 +1,3 @@
-#' Extract a position in a vector
-#'
-#' Given a vector, return a vector with all zeros except at 'position'
-#' @param x the vector
-#' @param position the position
-#' @export
-getInd <- function(x, position)
-    {
-        res <- vector(length = length(x))
-        res[position] <- x[position]
-        res
-    }
-
-
 #' Display a 'n' random rows of a data.frame
 #'
 #' Given a data.frame, display a random selection of it. To see more
@@ -24,6 +10,22 @@ sampleview <- function(df, n = 6)
         toshow <- sample(1:nrow(df), size = n)
         df[toshow, ]
     }
+
+#' Test and convert to numeric
+#'
+#' Test if a given vector is numeric and if yes, then convert it to
+#' numeric. Copied from Stackoverflow.
+#' @param col a given vector
+#' @return perhaps a numeric vector
+#' @export
+convert.numeric <- function(col) {
+    test.col <- as.numeric(as.character(col[!is.na(col)]))
+    if(suppressWarnings(all(!is.na(test.col)))) {
+        as.numeric(as.character(col))
+    } else {
+        col
+    }
+}
 
 
 #' Convert a factor to character
@@ -72,3 +74,17 @@ sun <- function(x) sort(unique(x))
 #' @export
 rmall <- function() rm(list = ls(envir = .GlobalEnv),
                        envir = .GlobalEnv)
+
+
+#' Extract a position in a vector
+#'
+#' Given a vector, return a vector with all zeros except at 'position'
+#' @param x the vector
+#' @param position the position
+#' @export
+getInd <- function(x, position)
+    {
+        res <- vector(length = length(x))
+        res[position] <- x[position]
+        res
+    }
