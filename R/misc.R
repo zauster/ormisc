@@ -19,8 +19,8 @@ sampleview <- function(df, n = 6)
 #' @return perhaps a numeric vector
 #' @export
 convert.numeric <- function(col) {
-    test.col <- as.numeric(as.character(col[!is.na(col)]))
-    if(suppressWarnings(all(!is.na(test.col)))) {
+    test.col <- suppressWarnings(as.numeric(as.character(col[!is.na(col)])))
+    if(all(!is.na(test.col))) {
         as.numeric(as.character(col))
     } else {
         col

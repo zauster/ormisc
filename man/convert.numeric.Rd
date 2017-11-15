@@ -14,5 +14,5 @@ perhaps a numeric vector
 }
 \description{
 Test if a given vector is numeric and if yes, then convert it to
-numeric.
+numeric. Copied from Stackoverflow.
 }
