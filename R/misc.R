@@ -88,3 +88,12 @@ getInd <- function(x, position)
         res[position] <- x[position]
         res
     }
+
+#' Code the time
+#'
+#' Turn the output of `Sys.time` into a long number
+#' @return a 15 char long number
+#' @export
+codeTime <- function() {
+    gsub("-", "", gsub(":", "", gsub(" ", "_", Sys.time())))
+}
