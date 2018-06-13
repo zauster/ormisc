@@ -3,6 +3,7 @@
 export("%nin%")
 export(codeTime)
 export(convert.numeric)
+export(dsetdiff)
 export(fac2char)
 export(fac2num)
 export(getInd)
